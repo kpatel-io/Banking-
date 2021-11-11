@@ -5,7 +5,7 @@ import os
 def transfer():
     
     
-    type1 = print(input("Would you like tro transfer from Checking to Savings? (yes or no) "))
+    type1 = print(input("Would you like to transfer from Checking to Savings? (yes or no) "))
     if type1 == "yes":
             amount = float(input("Enter the amount to Transfer: "))
             Checking.withdraw(amount)
@@ -63,7 +63,7 @@ class accounts():
 
 
 print("Welcome to Spring Bank")
-C = customer()
+C = customer.person()
 Checking = accounts()
 amount = float(input("Enter the amount to Deposit: "))
 Checking.deposit(amount)
